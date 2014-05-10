@@ -9,7 +9,9 @@ var addToDoItem = function () {
         
         myListItemCounter++;
         var myNewListItem = document.getElementById("input").value;
-        document.getElementById("orderedlist").innerHTML += '<li id="hideItem' + myListItemCounter + '"><span id="listItem' + myListItemCounter + '" onclick="strikeOutListItem(\'listItem' + myListItemCounter + '\');"> "' + myNewListItem + + myListItemCounter + ' "</span>' + '<span id="listItem' + myListItemCounter + '" onclick="hideListItem(\'hideItem' + myListItemCounter + '\');">  ---Click to Delete--- </span></li>';
+        //document.getElementById("orderedlist").innerHTML += '<li id="hideItem' + myListItemCounter + '"><span id="listItem' + myListItemCounter + '" onclick="strikeOutListItem(\'listItem' + myListItemCounter + '\');"> "' + myNewListItem + +myListItemCounter + ' "</span>' + '<span id="listItem' + myListItemCounter + '" onclick="hideListItem(\'hideItem' + myListItemCounter + '\');">  ---Click to Delete--- </span></li>';
+
+        document.getElementById("orderedlist").innerHTML += '<li id="hideItem' + myListItemCounter + '"><span id="listItem' + myListItemCounter + '" onclick="strikeOutListItem(\'listItem' + myListItemCounter + '\');"> "' + myNewListItem + ' "</span>' + '<span id="listItem' + myListItemCounter + '" onclick="hideListItem(\'hideItem' + myListItemCounter + '\');">  ---Click to Delete--- </span></li>';
 
         document.getElementById("input").value = "";
     }

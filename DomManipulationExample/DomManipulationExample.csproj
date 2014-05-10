@@ -65,7 +65,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="class.js" />
+    <Content Include="classArray.js" />
     <Content Include="index.html" />
+    <Content Include="indexclass.html" />
     <Content Include="main.js" />
     <Content Include="noArray.js" />
     <Content Include="style.css" />
